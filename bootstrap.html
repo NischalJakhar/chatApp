@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Just Chat</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!--my socket files-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Welcome to Private Chat</h3>
+                    <nav class="nav nav-masthead">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+            <!--Input box where you enter a name and press Login-->
+            <div id="loginAndChatHandler">
+
+            <div class="input-group" id="loginblock">
+
+                <input type="text" id="username" name="username" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                <button type="button" class="btn btn-primary" id="login">Login</button>
+            </div>
+
+            <!--Chatbox input with send button-->
+            <div class="input-group" id="chatblock">
+
+                <input type="text" id="chat" name="chat" class="form-control" placeholder="Type your chat here....Use @username chat for private chat" aria-describedby="basic-addon1">
+                <button type="button" class="btn btn-success" id="send">Send</button>
+            </div>
+
+            </div>
+
+
+
+
+            <div id="outerchatblock">
+                <!--div where my chat is displayed on the screen below my chat input box-->
+                <div id="chatboxblock">
+                   <ul id="chatbox">
+                   </ul>
+                </div>
+
+            <!--box that tells which user loggedIn-->
+                <div id="logginginblock">
+                   <ul id="loggingin">
+                   </ul>
+                </div>
+            </div>
+
+
+
+
+            <!--div which tells user who loggedOut-->
+            <div id="loggingblock">
+                <ul id="logging">
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Just Chat &copy; Nischal Jakhar</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<link href="client.css" type="text/css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

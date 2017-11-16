@@ -1,0 +1,13 @@
+#particles-js {
+    background-color: black;
+
+    height: 100%;
+    width: 100%;
+}
+#quotes{
+    color: aliceblue;
+    
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
